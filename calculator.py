@@ -9,6 +9,17 @@ import math
 def add(a, b): 
     return a + b
 
+def square_root(a):
+    try:
+        b = math.sqrt(a)
+        return b
+    except ValueError as e:
+        print(e)
+
+def hypotenuse(a, b):
+    return math.hypot(a, b)
+
+
 def subtract(a, b):
     return a-b
 
