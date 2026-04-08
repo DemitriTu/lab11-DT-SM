@@ -6,16 +6,6 @@ One function per operation, in order.
 """
 import math
 # First example
-def square_root(a):
-    try:
-        b = math.sqrt(a)
-        return b
-    except ValueError as e:
-        print(e)
-
-def hypotenuse(a, b):
-    return math.hypot(a, b)
-
 def add(a, b): 
     return a + b
 
