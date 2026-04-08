@@ -15,7 +15,7 @@ def subtract(a, b):
 def multiply(a, b):
     return a * b
 
-def div(a, b):
+def divide(a, b):
     try:
         c = a / b
         return c
@@ -23,14 +23,14 @@ def div(a, b):
         print(e)
 
 
-def log(a, b):
+def logarithm(a, b):
     try:
         c = math.log(b, a)
         return c
     except ValueError as e:
         print(e)
 
-def exp(a, b):
+def exponent(a, b):
     return a ** b
 
 
