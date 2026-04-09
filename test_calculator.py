@@ -7,12 +7,12 @@ class TestCalculator(unittest.TestCase):
     def test_multiply(self): # 3 assertions
         self.assertEqual(mul(45, 0), 0)
         self.assertEqual(mul(45, 1), 45)
-        self.assertEqual(mul(6, 9), 72)
+        self.assertEqual(mul(6, 9), 54)
 
     def test_divide(self): # 3 assertions
-        assert div(45/0) is None
-        self.assertEqual(div(6/3), 2)
-        self.assertEqual(div(6/1), 1)
+        self.assertEqual(div(15, 5), 3)
+        self.assertEqual(div(6, 3), 2)
+        self.assertEqual(div(6, 1), 6)
 
     # ##########################
 
@@ -57,11 +57,11 @@ class TestCalculator(unittest.TestCase):
         # with self.assertRaises(<INSERT_ERROR_TYPE>):
         #     div(0, 5)
         with self.assertRaises(ZeroDivisionError):
-            div(0,5)
+            div(5, 0)
     def test_logarithm(self): # 3 assertions
-        self.assertEqual(logarithm(8,3),2)
-        self.assertEqual(logarithm(9,2),3)
-        self.assertEqual(logarithm(100,2),10)
+        self.assertEqual(logarithm(2,8),3)
+        self.assertEqual(logarithm(3,9),2)
+        self.assertEqual(logarithm(10,100),2)
 
     def test_log_invalid_base(self): # 1 assertion
         # use same technique from test_divide_by_zero
